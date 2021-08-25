@@ -10,10 +10,11 @@ public class Tester13 {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.actitime.com/login.do");
-
+		
 		driver.findElement(By.id("username")).sendKeys("admin");// to find id locator and enter data
 		Thread.sleep(3000);
 		driver.close();
+		
 	}
 
 }
