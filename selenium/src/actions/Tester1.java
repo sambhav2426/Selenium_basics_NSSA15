@@ -18,12 +18,13 @@ public class Tester1 {
 		driver.get("https://www.actitime.com/");
 		WebElement pricing = driver.findElement(By.linkText("Pricing"));//locate element for mouse hover
 		
-		Actions actions =new Actions(driver);
+		Actions actions = new Actions(driver);
 		actions.moveToElement(pricing);//hovering mouse on pricing
 		actions.perform();
 		
 		Thread.sleep(5000);
 		driver.close();
+		
 	}
 
 }

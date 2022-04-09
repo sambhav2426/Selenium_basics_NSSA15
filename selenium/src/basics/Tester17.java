@@ -10,8 +10,8 @@ public class Tester17 {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.actitime.com/login.do");
-		
-		driver.findElement(By.partialLinkText("Forgot ")).click();//to find partialLink Text(use for lengthy text)
+		Thread.sleep(3000);
+		driver.findElement(By.partialLinkText("Forgot")).click();//to find partialLink Text(use for lengthy text)
 		Thread.sleep(3000);
 		driver.close();
 
